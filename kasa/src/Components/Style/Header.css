@@ -1,0 +1,17 @@
+.en-tete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 5%;
+}
+
+.en-tete div{
+    display: flex;
+    align-items: center;
+}
+
+.en-tete div span{
+    padding-right: 30px;
+    color: #FF6060;
+    text-decoration: none;
+}
