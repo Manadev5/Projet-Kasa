@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.en-tete div span{
+.en-tete div .change{
     padding-right: 30px;
     color: #FF6060;
     text-decoration: none;

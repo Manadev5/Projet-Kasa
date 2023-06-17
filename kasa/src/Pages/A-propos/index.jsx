@@ -1,6 +1,20 @@
+import Collapses from "../../Components/Collapses";
+import Paesage from "../../paesage.jpg"
+
 function Apropos (){
 
-return <h1>HOUUUUUUUUUUUU</h1>
+return(
+<main>
+<div className="paesage">
+    <img src={Paesage} alt="paesage"/>
+</div>
+
+<section>
+<Collapses />
+</section>
+
+</main>
+) 
 
 }
 

@@ -4,9 +4,11 @@ import './index.css';
 import Home from './Pages/Home';
 import Apropos from './Pages/A-propos';
 import Apartments from './Pages/Apartments';
+import Error from './Pages/Error';
 import Header  from "./Components/Header";
 import Footer from './Components/Footer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
+import { BrowserRouter as Router, Route, Routes,} from 'react-router-dom'
 
 const route = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -16,10 +18,12 @@ route.render(
    <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Apartments" element={<Apartments />} />
+      <Route path = '/Apartments/:id' element={<Apartments />} />
       <Route path="/Apropos"  element={<Apropos />} />
+      <Route path="*"   element={<Error />} />
     </Routes>
   </Router>
   <Footer />
 </React.StrictMode>
 )
+

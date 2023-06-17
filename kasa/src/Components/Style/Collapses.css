@@ -1,0 +1,68 @@
+.paesage{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.paesage img{
+    width: 90%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.col-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.collapse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    background-color: #FF6060;
+    padding-right: 15px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.title-collapse h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.title-collapse img{
+    width: 24px;
+    height: 13.17px;
+    cursor: pointer;
+}
+
+.text{
+    display: none;
+}
+
+.text-show{
+  display: flex;
+  width: 69.5%;
+  height: auto;
+  position: relative;
+  top: 10%;
+  border: 1px solid #F6F6F6;
+  border-radius: 5px 0px;
+  background-color: #F6F6F6;
+  color: hsl(0, 100%, 69%);
+  font-size: 24px;
+ padding: 36px 10px 30px 27px;
+  margin-bottom: 20px;
+  
+}

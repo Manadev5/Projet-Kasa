@@ -8,8 +8,8 @@ return (
 <div className='en-tete'>
  <img src= {logo} alt="logo kasa"  />
  <div>
- <Link to=" " ><span>Accueil</span></Link>
- <Link to="Apropos"><span>A Propos</span></Link>
+ <Link to=" " className='change'><span>Accueil</span></Link>
+ <Link to="Apropos" className='change'><span>A Propos</span></Link>
  </div>
 </div>
 )

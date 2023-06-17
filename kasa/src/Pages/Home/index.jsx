@@ -1,7 +1,9 @@
 import {Datas} from '../../Datas/DataApartement';
 import Card from '../../Components/Card';
 import '../../Components/Style/Card.css';
-import montagnes from '../../montagnes.jpg'
+import montagnes from '../../montagnes.jpg';
+
+
 
 function App() {
   return (
@@ -14,14 +16,13 @@ function App() {
     <div className='card-container'>
       <ul className='card-list'>
         {Datas.map(({id,cover,title,})=>
-       
-        <Card
-         key={id}
-          id={id}
-          cover={cover}
-          title={title}
-        />
-       
+           <Card
+           
+            key={id}
+            id={id}
+            cover={cover}
+            title={title}
+          />
         )}
 
       </ul>
