@@ -1,7 +1,7 @@
 import {Datas} from '../../Datas/DataApartement';
 import Card from '../../Components/Card';
 import '../../Components/Style/Card.css';
-import montagnes from '../../montagnes.jpg';
+import montagnes from '../../Assets/montagnes.jpg';
 
 
 

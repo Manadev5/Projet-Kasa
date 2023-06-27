@@ -25,3 +25,26 @@
     margin-top: 10%;
     margin-bottom: 5%;
 }
+
+.error-container .lien:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:500px) {
+    
+    .error-container h1{
+        margin-top: 200px;
+        font-size: 96px;
+    }
+
+    .error-container h2{
+        font-size: 18px;
+        width: 54%;
+        text-align: center ;
+        margin-bottom: 130px;
+    }
+
+    .error-container .lien{
+        font-size: 14px;
+    }
+}

@@ -10,9 +10,21 @@
 .footer img{
     width: 122px;
     height: 40px;
-    padding-top: 3%;
+    padding-top: 4% ;
+    padding-bottom: 2%;
+    
 }
 
 .footer p{
     color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .footer img{
+        padding-top: 15%;
+    }
+    .footer p{
+        width: 32%;
+        text-align: center;
+    }
 }

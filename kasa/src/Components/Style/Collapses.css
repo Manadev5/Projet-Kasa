@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Montserrat-light;
+    src: url("../../fonts/Montserrat-Light.ttf");
+}
+
 .paesage{
     display: flex;
     justify-content: center;
@@ -10,17 +15,23 @@
     object-fit: cover;
 }
 
-.col-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
+.collapses-section{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 70%;
     gap: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 12%;
+   
 }
+
 .collapse{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .title-collapse{
@@ -28,7 +39,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
     background-color: #FF6060;
     padding-right: 15px;
     padding-left: 20px;
@@ -41,10 +51,45 @@
     color: white;
 }
 
-.title-collapse img{
+.vector-down{
     width: 24px;
     height: 13.17px;
     cursor: pointer;
+    
+    &:active{
+        animation: down 500ms  forwards;
+    }
+}
+
+.vector-up{
+    width: 24px;
+    height: 13.17px;
+    cursor: pointer;
+    
+    &:active{
+        animation: up 500ms  backwards; 
+
+    }
+}
+
+@keyframes down{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes up {
+    0%{
+        transform: rotate(-180deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
 .text{
@@ -52,8 +97,7 @@
 }
 
 .text-show{
-  display: flex;
-  width: 69.5%;
+  width: 99%;
   height: auto;
   position: relative;
   top: 10%;
@@ -62,7 +106,40 @@
   background-color: #F6F6F6;
   color: hsl(0, 100%, 69%);
   font-size: 24px;
+  font-family: Montserrat-light;
  padding: 36px 10px 30px 27px;
   margin-bottom: 20px;
   
+}
+
+@media screen and (max-width:500px) {
+
+    .paesage img{
+        height: 223px;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+
+    .collapses-section{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .title-collapse h2{
+        font-size: 20px;
+    }
+
+    .title-collapse img{
+        width: 16px;
+        height: 9px;
+       
+    }
+
+    .text-show{
+        font-size: 16px;
+        padding: 23px 10px 52px 10px;
+    }
+
+    
+    
 }

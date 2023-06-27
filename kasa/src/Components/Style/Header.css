@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 2% 5%;
+    width: 90%;
 }
 
 .en-tete div{
@@ -13,5 +14,25 @@
 .en-tete div .change{
     padding-right: 30px;
     color: #FF6060;
+    font-size: 24px;
     text-decoration: none;
+}
+
+.en-tete div .change:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:500px) {
+    .en-tete img{
+        width: 40%;
+    }
+
+    .en-tete div{
+        gap: 20px;
+    }
+
+    .en-tete div .change{
+        padding-right: 10px;
+        font-size: 14px;
+    }
 }
