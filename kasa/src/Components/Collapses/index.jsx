@@ -23,7 +23,7 @@ return(
         <h2>{title}</h2>
         <img src={vector} alt="icon" className={isOpen === index ? 'vector-up' :'vector-down'} onClick={() => toggle(index)}/>
        </div>
-       <div key={index} className={isOpen === index ? 'text-show' :'text'}>{text}</div>
+       <div key={'collapse'+ index} className={isOpen === index ? 'text-show' :'text'}>{text}</div>
      </div>
 
   

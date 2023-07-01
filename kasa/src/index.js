@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import Home from './Pages/Home';
 import Apropos from './Pages/A-propos';
 import Apartments from './Pages/Apartments';
@@ -22,8 +21,8 @@ route.render(
       <Route path="/Apropos"  element={<Apropos />} />
       <Route path="*"   element={<Error />} />
     </Routes>
+    <Footer />
   </Router>
-  <Footer />
 </React.StrictMode>
 )
 

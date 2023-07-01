@@ -18,7 +18,7 @@ return(
      text = {index.text}
      title = {index.title}
      index = {index} 
-     key = {index}
+     key={Math.random + index.title}
   />
 
 )) 

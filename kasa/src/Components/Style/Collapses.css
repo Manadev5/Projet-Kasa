@@ -55,21 +55,17 @@
     width: 24px;
     height: 13.17px;
     cursor: pointer;
+    animation: down 500ms  forwards;
     
-    &:active{
-        animation: down 500ms  forwards;
-    }
 }
 
 .vector-up{
     width: 24px;
     height: 13.17px;
     cursor: pointer;
-    
-    &:active{
-        animation: up 500ms  backwards; 
+    animation: up 500ms  backwards; 
 
-    }
+
 }
 
 @keyframes down{
