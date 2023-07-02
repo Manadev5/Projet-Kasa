@@ -5,6 +5,7 @@ import '../../Components/Style/Collapses.css'
 function Apropos (){
 
 return(
+ //utilisation de map pour recuperer les données affiché du collpase 
 <main>
 <div className="paesage">
     <img src={Paesage} alt="paesage"/>
@@ -12,7 +13,6 @@ return(
 
 <section className="collapses-section">
  
-
 {dataCollapse.map((index)=>(
   <Collapses
      text = {index.text}
@@ -33,6 +33,7 @@ return(
 
 }
 
+//Json contenant le titre et le texte affiché sur le collpase 
 const dataCollapse =[
     {
       title : "Fiabilité",

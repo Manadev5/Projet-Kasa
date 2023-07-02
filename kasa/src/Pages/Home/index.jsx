@@ -7,6 +7,7 @@ import montagnes from '../../Assets/montagnes.jpg';
 
 function App() {
   return (
+    //Recuperation des images et du texte d'un logement grace à la propriété map
 <main>
     <div className='image-montagnes'>
       <img src={montagnes} alt="montagnes"/>

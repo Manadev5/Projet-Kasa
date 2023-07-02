@@ -3,8 +3,9 @@ import vector from '../../Assets/Vector.png'
 
 function Collapses({title, text, index}) {
 
+   // On fait partir le state avec null pour réprésenter le collapse fermé
    const [isOpen, setIsOpen] = useState(null);
-
+  //fonction pour la fermature/overture du collapse
    const toggle = (i) => {
 
      setIsOpen(i);

@@ -15,13 +15,14 @@ function Apartments(){
 
 
 const currentIndex  = useState(0);
-let { idApartment } = useParams();
 
-  
-  
+
+  //Recuperation de l'ID de l'appartement
+  let { idApartment } = useParams();
   const accommodation = Datas.find(logement => idApartment === logement.id);
-  console.log(accommodation);
 
+
+// Utilisation de try catch pour afficher les éléments du logement ou la page d'erreur en cas d'ID incorrect
 try{
   return( 
     <main>

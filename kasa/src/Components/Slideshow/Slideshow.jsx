@@ -3,9 +3,10 @@ import vectorleft from '../../Assets/Vector-left.png';
 import vectorright from '../../Assets/Vector-right.png';
 
 function SlideShow({accommodation}){
-
+    //utilisation de use state pour faire partir l'index de 0
     const [currentIndex, setCurrentIndex] = useState(0);
 
+   // Fonctions pour naviguer sur l'mage précedénte et suivante
     const Previous = () =>{
         const firstSlide = currentIndex === 0;
         const newIndex= firstSlide ? accommodation.pictures.length - 1 : currentIndex -1;
@@ -21,6 +22,7 @@ function SlideShow({accommodation}){
       return(
             
         <div className="slider">{
+            // condition pour afficher ou no le fleches de navigation selon le nombre d'image
             accommodation.pictures.length === 1 ? null :
             <div>
             <div className="vector-left"><img src={vectorleft} alt="vector left" onClick={() => Previous()} /></div>
