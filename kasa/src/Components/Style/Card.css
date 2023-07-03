@@ -40,8 +40,8 @@
 .single-card{
     width: 30%;
     margin-bottom: 2%;
-    
 }
+
 a{
     text-decoration: none;
 }
@@ -50,14 +50,16 @@ a{
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
+    filter: brightness(87%);
+  
 }
-
+/*background: linear-gradient(to bottom, white, #000000);*/
 .single-card p{
     position: relative;
     bottom: 25%;
     left: 2%;
     color: white;
-    width:40%;
+    width:50%;
     
 }
 

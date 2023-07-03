@@ -31,7 +31,7 @@
 
 .vector-left{
     position: absolute;
-    left: 18%;
+    left: 7%;
     bottom: 47%;
     z-index: 1;
     cursor: pointer;
@@ -39,7 +39,7 @@
 
 .vector-right{
     position: absolute;
-    left: 77%;
+    left: 89%;
     bottom: 48%;
     z-index: 1;
     cursor: pointer;
