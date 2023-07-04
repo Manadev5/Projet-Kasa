@@ -12,7 +12,7 @@ function Card ({id,cover,title}){
         //ajout de l'id de l'appartement s
         <li key={id} className="single-card">
         <Link to ={locationUrl + `${id}`}>
-           
+            <div className='filter'></div>
             <img  src={cover} alt={title}/>
             <p>{title}</p>
             
