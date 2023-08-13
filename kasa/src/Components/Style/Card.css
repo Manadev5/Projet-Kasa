@@ -1,105 +1,101 @@
-
-.image-montagnes img{
-    display: flex;
-    justify-content: center;
-    margin:3% 5%;
-    width: 90%;
-    border-radius: 25px;
-    object-fit: cover;
-    filter : brightness(50%)
+.image-montagnes img {
+  display: flex;
+  justify-content: center;
+  margin: 3% 5%;
+  width: 90%;
+  border-radius: 25px;
+  object-fit: cover;
+  filter: brightness(50%);
 }
 
-.image-montagnes h1{
-    position: absolute;
-    top:26%;
-    right: 30%;
-    font-size: 48px;
-    font-weight:500;
-    color: white;
+.image-montagnes h1 {
+  position: absolute;
+  top: 26%;
+  right: 30%;
+  font-size: 48px;
+  font-weight: 500;
+  color: white;
 }
 
-.card-container{
-    width: 90%;
-    height: auto;
-    background-color: #F6F6F6;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
+.card-container {
+  width: 90%;
+  height: auto;
+  background-color: #f6f6f6;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.card-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3%;
-    list-style-type: none;
-    
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+  list-style-type: none;
 }
-.single-card{
-    width: 30%;
-    margin-bottom: 2%;
-   
+.single-card {
+  width: 30%;
+  margin-bottom: 2%;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.single-card img{
-    display: inline-block;
+.single-card img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.single-card p {
+  position: relative;
+  bottom: 25%;
+  left: 2%;
+  color: white;
+  width: 60%;
+}
+/*.filter {
+  background: linear-gradient(to top, black, transparent);
+  opacity: 45%;
+  position: relative;
+  border-radius: 10px;
+  top: 95%;
+  width: 100%;
+  height: 100%;
+}*/
+
+@media screen and (max-width: 500px) {
+  .image-montagnes img {
+    height: 111px;
+    margin-top: 25px;
+  }
+
+  .image-montagnes h1 {
+    font-size: 24px;
+    top: 10%;
+    right: 38%;
+    width: 53%;
+  }
+
+  .card-container {
+    background-color: white;
+  }
+
+  .card-list {
+    padding: 0;
+  }
+
+  .single-card {
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
+    margin-bottom: 20px;
+  }
 
-.single-card p{
+  .single-card p {
     position: relative;
-    bottom: 25%;
-    left: 2%;
-    color: white;
-    width:60%;
-    
-}
-.filter{
-    background: linear-gradient(to top,black, transparent);
-    opacity: 45%;
-    position: absolute;
-    border-radius: 10px;
-    width: 26.25%;
-    height: 44.5%;
-}
-
-@media screen and (max-width:500px) {
-    .image-montagnes img{
-        height: 111px;
-        margin-top: 25px;
-    }
-
-    .image-montagnes h1{
-        font-size: 24px;
-        top: 10%;
-        right: 38%;
-        width: 53%;
-    }
-
-    .card-container{
-        background-color: white;
-    }
-
-    .card-list{
-        padding: 0;
-    }
-
-    .single-card{
-         width: 100%;
-         margin-bottom: 20px;
-    }
-
-    .single-card p{
-       position: relative;
-       bottom: 30%;
-    
-    }
+    bottom: 30%;
+  }
 }

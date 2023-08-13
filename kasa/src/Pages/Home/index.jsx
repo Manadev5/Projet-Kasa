@@ -16,6 +16,7 @@ function App() {
 
     <div className='card-container'>
       <ul className='card-list'>
+      
         {Datas.map(({id,cover,title,})=>
            <Card
            

@@ -11,8 +11,8 @@ function Card ({id,cover,title}){
      return(
         //ajout de l'id de l'appartement s
         <li key={id} className="single-card">
-        <Link to ={locationUrl + `${id}`}>
-            <div className='filter'></div>
+          <Link to ={locationUrl + `${id}`}>
+          
             <img  src={cover} alt={title}/>
             <p>{title}</p>
             
